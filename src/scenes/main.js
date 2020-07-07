@@ -8,7 +8,6 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
-  StatusBar,
   Image,
   Animated,
   Dimensions,
@@ -148,12 +147,11 @@ class MainScreen extends Component {
 
     return (
       <View style={{ flex: 1 }}>
-        <StatusBar translucent barStyle='dark-content' backgroundColor="transparent"/>
         <Animated.View
           style={{
             position: "absolute",
             width: 60,
-            top: 50,
+            top: 25,
             left: 20,
             zIndex: 100,
             opacity: headerBackArrowOpacity, //animated
